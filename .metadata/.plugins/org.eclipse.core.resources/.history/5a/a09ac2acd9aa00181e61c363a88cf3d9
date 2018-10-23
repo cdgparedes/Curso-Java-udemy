@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Arreglos {
+	private final int BIMESTRES = 6;// La palabra final hace referencia a una
+									// constante
+	private final int CALIFICACION_APROBATORIA;
+	private double calificaciones[] = new double[6];
+
+	public static void main(String args[]) {
+		Arreglos objeto = new Arreglos(70);
+		objeto.solicitaCalificaciones();
+		objeto.ImprimeCalificacionBimestre();
+		System.out.println("\nEl promedio es semestral es :\t"+ objeto.calculaPromedio());
+		
+	}
+	
+	public double calculaPromedio(){
+	double suma = 0;
+	for (double calificacion:calificaciones ) {//vamos a guardar calificación por calificacion
+	  suma+= calificacion;	
+	  
+	 }
+	  return suma/BIMESTRES;
+	}
+
+	public Arreglos(int CalificacionAprobatoria) {
+		CALIFICACION_APROBATORIA = CalificacionAprobatoria;
+	}
+
+	public void ImprimeCalificacionBimestre() {
+		for (int i = 0; i < calificaciones.length; i++) {
+			if (calificaciones[i] < CALIFICACION_APROBATORIA) {
+
+				System.out.println("Con un  " + calificaciones[i] + " Repruebas el bimestre ");
+			} else {
+				System.out.println("Con un  " + calificaciones[i] + " Apruebas el bimestre ");
+
+			}
+		}
+
+	}
+
+	public void solicitaCalificaciones() {
+		Scanner entrada = new Scanner(System.in);
+		double calificacion;
+		for (int i = 0; i < calificaciones.length; i++) {
+			System.out.println("calificación para el bimestre" + (i + 1));
+			calificacion = entrada.nextDouble();
+			calificaciones[i] = calificacion;
+		}
+	}
+
+}

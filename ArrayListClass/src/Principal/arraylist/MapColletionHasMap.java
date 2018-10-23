@@ -1,0 +1,40 @@
+package Principal.arraylist;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import clases.Agenda;
+public class MapColletionHasMap {
+  public  void trabajarConMap(){
+	  //Crear un mapa 
+	  HashMap<String,Agenda> agenda = new HashMap<String,Agenda>();
+	  //vamos agregar valores al map 
+	  agenda.put("001", new Agenda("30", "Cesar Dubiel", "3213440691"));
+	  agenda.put("002", new Agenda("33", "Julio David", "321356650691"));
+	  agenda.put("003", new Agenda("36", "Daniel Andres", "235440691"));
+	  agenda.put("004", new Agenda("39", "Damaris paredes", "63525440691"));
+	  imprimeMap(agenda);
+	  //eli
+	  agenda.remove("002");
+	  
+	  //En esta impresion ya no debe aparecer el número dos por que lo elimiinamos
+	  imprimeMap(agenda);
+	  //Reemplazar un elemento
+	  agenda.put("001",new Agenda("15","Julian","No tiene"));
+	  imprimeMap(agenda);
+	  
+	  System.out.println(agenda.keySet());//Para ver las claves en un set()
+	  System.out.println(agenda.get("001"));
+  }
+  
+  
+  static void imprimeMap(HashMap<String,Agenda> agenda){
+	  System.out.println();
+	  for(Map.Entry<String,Agenda> ag: agenda.entrySet()){
+		 System.out.println("  Clave :  " + ag.getKey() + " " + " Nombre:  " + ag.getValue().getNombre()
+				 
+				 + " Edad: " + ag.getValue().getEdad()
+				 + "  Teléfono: " + ag.getValue().getTelefono()); 
+	  }
+  }
+}

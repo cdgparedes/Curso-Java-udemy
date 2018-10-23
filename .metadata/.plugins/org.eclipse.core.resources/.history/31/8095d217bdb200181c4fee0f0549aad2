@@ -1,0 +1,9 @@
+package ambitoVariables;
+
+public class Principal {
+ public static void main (String args[]){
+	miClase objetoMiClase = new  miClase();
+	objetoMiClase.setEdad(20);
+	System.out.println("La edad es :" + objetoMiClase.getEdad());
+ }
+}

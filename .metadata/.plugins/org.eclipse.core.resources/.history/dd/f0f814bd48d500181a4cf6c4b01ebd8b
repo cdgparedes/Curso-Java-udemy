@@ -1,0 +1,11 @@
+package usodearchivos;
+
+public class Archivos {
+  public static void main(String args[]){
+	  
+  }
+  //Metodo para crear un directorio
+  static  void creaDirectorio(String directorio){
+	  
+  }
+}

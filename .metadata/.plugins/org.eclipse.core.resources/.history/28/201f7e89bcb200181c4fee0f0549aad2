@@ -1,0 +1,14 @@
+package ambitoVariables;
+
+public class miClase {
+	private  int edad;
+	
+	
+	public int getEdad(){
+		return edad;
+	}
+    
+	 public void setEdad(int ed){
+		 edad = ed;
+	 }
+}

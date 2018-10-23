@@ -1,0 +1,28 @@
+package ambitoVariables;
+
+public class miClase {
+	private  int edad;
+	
+	static  String nacionalidad = "Colombiana";
+	public int getEdad(){
+		return edad;
+	}
+    
+	 public void setEdad(int ed){
+		 edad = ed;
+	 }
+	 
+	 
+	public String mayorDeEdad(int ed){
+      int faltante;//variable local 
+      faltante = 0;
+      if (ed >= 18){
+    	  return "Eres Mayor de edad y con nacionalidad"+ nacionalidad;
+    	  
+    	  
+      }else{
+    	 faltante = 18 - ed;
+    	 return "Te faltan" + faltante + "Para ser mayor de edad ";
+      }
+	}
+}

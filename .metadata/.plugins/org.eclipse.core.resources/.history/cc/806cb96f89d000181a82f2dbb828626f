@@ -1,0 +1,30 @@
+package Principal.arraylist;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
+import clases.*;
+public class SetColletion {
+   public static void ejemploSet(){
+	   Agenda per1 = new Agenda("37","Juan","4921301445");
+	   Agenda per2 = new Agenda("30","Cesar","3213440691");
+	   Agenda per3 = new Agenda("35","Carlos ","101010");
+	   Agenda per4 = new Agenda("28","Cujfi","3135878755");
+	   
+	   
+	   Set<Agenda> agendaClientes = new HashSet<Agenda>();
+	   agendaClientes.add(per1);
+	   agendaClientes.add(per2);
+	   agendaClientes.add(per3);
+	   agendaClientes.add(per4);
+	   
+   }
+   
+  static void imprimirSet(Collection<Agenda> col){
+	 for(Agenda agenda : col){
+		System.out.println(agenda.getNombre() + "" + agenda.getTelefono()+ ""+agenda.getEdad());
+		
+	 }
+  }
+   
+}

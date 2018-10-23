@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.domain&apos; to &apos;instanceof&apos;&#x0D;&#x0A;- Original project: &apos;Interfaces&apos;&#x0D;&#x0A;- Destination element: &apos;instanceof&apos;&#x0D;&#x0A;- Original element: &apos;Interfaces/src/com.domain&apos;" description="Copy package" element1="/src&lt;com.domain" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1537631296712" target="/instanceof" version="1.0"/>
+</session>

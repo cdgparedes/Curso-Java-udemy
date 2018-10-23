@@ -1,0 +1,7 @@
+package Principal.arraylist;
+
+public class SetColletion {
+   public static void ejemloSet(){
+	   
+   }
+}

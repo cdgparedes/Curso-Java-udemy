@@ -1,0 +1,10 @@
+package Principal.arraylist;
+
+import java.util.HashMap;
+import clases.Agenda;
+public class MapColletionHasMap {
+  public  void trabajarConMap(){
+	  //Crear un mapa 
+	  HashMap<String,Agenda> agenda = new HashMap<String,Agenda>();
+  }
+}

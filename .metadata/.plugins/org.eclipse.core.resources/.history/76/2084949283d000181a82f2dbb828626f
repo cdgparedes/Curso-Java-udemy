@@ -1,0 +1,38 @@
+package Principal.arraylist;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class ArrayListSimple {
+  public static void usoArrayListSimple(){
+    List meses = new ArrayList<>();
+    
+    //Agregando elemento a la lista 
+    meses.add("Enero");
+    meses.add("Febrero");
+    meses.add("Marzo");
+    //obtener elentos de la lista 
+    int ultimoElemento = meses.size()-1;//Le colocamos -1 para evitar error de index java 
+    String ultimoMes = (String ) meses.get(ultimoElemento);
+    System.out.println("IMPRIMINEDO EL ULTIMO ELEMENTO");
+    System.out.println(ultimoElemento + "elemento" + ultimoMes);
+    //Imprimir elementos para modeo debug 
+    System.out.println("IMPRIMINEDO EN MODO DEBUG");
+    System.out.println("\n" + meses);
+    
+    
+    //Agregando un elemento en la posicion cero
+    
+    meses.add(0, "Abril");
+    meses.add("Abril");//Permite agregar elemntos repetidos 
+    System.out.println("\nHemos ingresado un elemento a la posicion 0\n" + meses);
+    
+     
+  }
+  
+  static void imprimeColletion(Collection col){
+	  Iterator iter = col.iterator();
+  }
+}
